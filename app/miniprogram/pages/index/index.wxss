@@ -30,13 +30,15 @@ swiper image{
 }
 
 .scriptItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #fff;
   border-radius: 6px;
 }
 
 .imageWrap {
   width: 100%;
-  height: calc(100% - 130rpx);
   display: flex;
   justify-content: center;
   align-items: center;

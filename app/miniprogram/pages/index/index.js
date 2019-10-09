@@ -82,5 +82,11 @@ Page({
     //     animation: ''
     //   })
     // }, 1000)
+  },
+  onShareAppMessage: function(res){
+    return {
+      title: '替你急',
+      path: '/pages/index/index'
+    }
   }
 })

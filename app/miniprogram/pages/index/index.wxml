@@ -12,7 +12,7 @@
   <view class="allScript" wx:for='{{scripts}}' wx:for-item="items" wx:key='items.title'>
     <view class="subTitle">{{items.title}}</view>
     <view class="scriptList">
-      <view class="scriptItem shadow-warp animation-{{animation=='shake'? 'shake':''}}" wx:for='{{items.children}}' wx:for-item="item" wx:key='item.name' bindtap="toggle" data-class="shake">
+      <view class="scriptItem shadow-warp " wx:for='{{items.children}}' wx:for-item="item" wx:key='item.name' bindtap="toggle" data-class="shake">
         <view class="imageWrap">
           <image mode='widthFix' src="../../images/{{item.url}}.png"></image>
         </view>
