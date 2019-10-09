@@ -1,0 +1,8 @@
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+@import "colorui/animation.wxss";
+
+button {
+  background: #fa541c;
+  color: #fff;
+}

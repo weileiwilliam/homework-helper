@@ -1,0 +1,23 @@
+<view class='container'>
+  <swiper class="card-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="3000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#fa541c">
+    <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+      <view class="swiper-item">
+        <image src="../../images/{{item.url}}" mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class="btnArea">
+    <button open-type='contact'>咨询下单</button>
+  </view>
+  <view class="allScript" wx:for='{{scripts}}' wx:for-item="items" wx:key='items.title'>
+    <view class="subTitle">{{items.title}}</view>
+    <view class="scriptList">
+      <view class="scriptItem shadow-warp animation-{{animation=='shake'? 'shake':''}}" wx:for='{{items.children}}' wx:for-item="item" wx:key='item.name' bindtap="toggle" data-class="shake">
+        <view class="imageWrap">
+          <image mode='widthFix' src="../../images/{{item.url}}.png"></image>
+        </view>
+        <view class="scriptName">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>

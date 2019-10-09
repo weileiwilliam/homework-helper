@@ -1,0 +1,56 @@
+page {
+  background: #F6F6F6;
+}
+
+swiper {
+  height: 400rpx;
+}
+
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+
+.btnArea {
+  padding: 30rpx;
+}
+
+.allScript {
+  padding: 0 30rpx 30rpx;
+}
+
+.subTitle {
+  margin-bottom: 20rpx;
+}
+
+.scriptList {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 30rpx;
+}
+
+.scriptItem {
+  background: #fff;
+  border-radius: 6px;
+}
+
+.imageWrap {
+  width: 100%;
+  height: calc(100% - 130rpx);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30rpx;
+}
+
+.imageWrap image {
+  width: calc(100% - 60rpx);
+}
+
+.scriptName {
+  margin-top: 20rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-top: 1px solid #F6F6F6;
+}
